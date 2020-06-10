@@ -50,6 +50,7 @@ public class SampleApplicationTests {
   @Test
   public void testSample() {
     Session session = sessionFactory.openSession();
+
     SampleApplication.savePerson(session);
 
     List<Person> savedPersons = session.createQuery("from Person", Person.class).list();

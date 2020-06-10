@@ -5,7 +5,6 @@
 
 <hibernate-configuration>
   <session-factory>
-
     <!-- Connection settings -->
     <property name="hibernate.connection.driver_class">com.google.cloud.spanner.jdbc.JdbcDriver</property>
 
@@ -29,6 +28,5 @@
     <mapping class="com.example.Payment"/>
     <mapping class="com.example.WireTransferPayment"/>
     <mapping class="com.example.CreditCardPayment"/>
-
   </session-factory>
 </hibernate-configuration>
